@@ -3,7 +3,7 @@ let formData = {
   dogName: "Byron",
   dogBreed: "Poodle"
 };
- 
+
 let configObj = {
   method: "POST",
   headers: {
@@ -12,7 +12,7 @@ let configObj = {
   },
   body: JSON.stringify(formData)
 };
- 
+
 fetch("http://localhost:3000/dogs", configObj)
   .then(function(response) {
     return response.json();
